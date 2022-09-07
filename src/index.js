@@ -12,7 +12,7 @@ import ring from "./Content/Apollo 1 Ring.obj"
 import logo from "./logo.svg";
 import resume from './Content/Resume_doc.docx';
 import iPhoneImage from "./Content/iPhone.png";
-import CImage from "./Content/C++.png";
+import CImage from "./Content/C.png";
 import Image2048 from "./Content/2048.png"
 import Me from "./Content/me2upscale.jpg";
 import reportWebVitals from './reportWebVitals';
