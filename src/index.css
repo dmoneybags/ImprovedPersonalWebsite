@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+img {
+  max-width: 100%
+}
+.App {
+  display: grid;
+}
+.Maingrad {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(50, 50, 50); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, rgb(85, 0, 255), rgb(0, 0, 0));
+}
+.MainScrollbar{
+  padding-top: 9em;
+}
+.MainImage {
+  width: 100%;
+  max-width: 700px;
+  clip-path: circle(40%);
+}
+.MainText {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+.iPhoneImage {
+  width: 50%;
+  flex-basis: 40%;
+}
+.Image2048{
+  width: 70%;
+  flex-basis: 40%;
+}
+.App {
+
+}
+.CImage{
+  width: 80%;
+}
+.TextBox {
+  padding: 2em;
+}
+.TextImageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.Caption {
+  color: grey;
+  font-style: italic;
+}
+.FooterText {
+  color: rgb(211, 211, 211);
+}
+.FooterContainer {
+  background-color: rgb(21, 21, 21);
+  width: 100%;
+  height: 300px;
+}
+.SocialBox {
+  width: 250px;
+  height: 50px;
+  display: flex;
+}
+.ProjectImage {
+  width: 100%;
+  padding: 40px;
+}
+#ProjectHatcheryShortTitle {
+  padding: 50px;
+}
+#PLTWBriefTitle {
+  padding: 50px;
+}
+@media only screen and (max-width: 60em) {
+  .TextImageBox {
+    display: inline-block;
+  }
+}
