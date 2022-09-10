@@ -14,6 +14,7 @@ import resume from './Content/Daniel DeMoney Fall 2022 Resume.pdf';
 import resumePic from './Content/Resume_Picture.png';
 import iPhoneImage from "./Content/iPhone.png";
 import CImage from "./Content/C.png";
+import aboutPic from "./Content/aboutPic.png";
 import Image2048 from "./Content/2048.png"
 import Me from "./Content/me2upscale.jpg";
 import reportWebVitals from './reportWebVitals';
@@ -160,25 +161,15 @@ class NavBar extends React.Component {
             </a>
         </div>
         <div className={`navbar-menu ${this.state.isActive ? "is-active" : ""}`}>
-          <Link className="navbar-item" to="/">
+          <a className="navbar-item" href="/">
             Overview
-          </Link>
+          </a>
+          <a className="navbar-item" href="/about">
+            About Me
+          </a>
           <a className="navbar-item" href="/resume">
             Resume
           </a>
-        <div className="navbar-item has-dropdown is-hoverable">
-          <a className="navbar-link" href = "/Extracurriculars">
-            Extracurriculars
-          </a>
-        <div className="navbar-dropdown is-boxed">
-          <Link className="navbar-item" to="/Extracurriculars/Hatchery">
-            Project Hatchery
-          </Link>
-          <Link className="navbar-item" to="/Extracurriculars/PLTW">
-            PLTW
-          </Link>
-        </div>
-      </div>
       </div>
       </div>
     )
@@ -243,6 +234,17 @@ export const ResumeData = (
     <TextSlide id = "HelloText" text = "My Resume" func={animateTextSwoosh}/>
     <Image image = {resumePic}  class = "ResumeImage" caption = "Don't be afraid to reach out!"/>
     <a class="button is-link is-large is-fullwidth is-outlined" style = {{marginTop: "20px", marginBottom: "20px"}} href = {resume} download>Download</a>
+  </div>
+)
+
+export const AboutData = (
+  <div>
+    <TextSlide id = "HelloText" text = "About Me" func={animateSlipper}/>
+    <Image image = {aboutPic}  class = "ResumeImage" caption = "Myself in Santa Cruz, taking photos of the sunset."/>
+    <Paragraph title = "" id = "AboutMeText" text = "I’m a curious, high-achieving business marketing student at Cal Poly Pomona, with a desire to gain practical experience within a financial and/or technological organization. I have over 2 years of sales and finance experience and recently completed an internship at II-VI, where I assisted with sales exceeding $10 million."></Paragraph>
+    <Paragraph title = "Current Work" id = "AboutMeText" text = "Currently, I’m part of Cal Poly Pomona’s Consumer Insights Consultancy. The consultancy conducts marketing research for clients assisting with profit margins, market outreach, and digital integration. Thus far I have strengthened my skills in data science, finances, and market research."/>
+    <Paragraph title = "Looking Forward" id = "AboutMeText" text = "I’m looking forward to working in a business and/or technology organization. I’d love to learn more about finance, market analysis, enterprise software, and/or consulting with the next move in my career."/>
+    <Footer></Footer>
   </div>
 )
 
