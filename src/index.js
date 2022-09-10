@@ -10,7 +10,8 @@ import './index.css';
 import {Link} from "react-router-dom";
 import ring from "./Content/Apollo 1 Ring.obj"
 import logo from "./logo.svg";
-import resume from './Content/Resume_doc.docx';
+import resume from './Content/Daniel DeMoney Fall 2022 Resume.pdf';
+import resumePic from './Content/Resume_Picture.png';
 import iPhoneImage from "./Content/iPhone.png";
 import CImage from "./Content/C.png";
 import Image2048 from "./Content/2048.png"
@@ -162,7 +163,7 @@ class NavBar extends React.Component {
           <Link className="navbar-item" to="/">
             Overview
           </Link>
-          <a className="navbar-item" href={resume} download>
+          <a className="navbar-item" href="/resume">
             Resume
           </a>
         <div className="navbar-item has-dropdown is-hoverable">
@@ -236,6 +237,14 @@ export class ArticleSection extends React.Component {
     )
   }
 }
+
+export const ResumeData = (
+  <div>
+    <TextSlide id = "HelloText" text = "My Resume" func={animateTextSwoosh}/>
+    <Image image = {resumePic}  class = "ResumeImage" caption = "Don't be afraid to reach out!"/>
+    <a class="button is-link is-large is-fullwidth is-outlined" style = {{marginTop: "20px", marginBottom: "20px"}} href = {resume} download>Download</a>
+  </div>
+)
 
 export const MainSectionData = (
   <div>
