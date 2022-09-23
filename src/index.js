@@ -240,7 +240,6 @@ export const ResumeData = (
 export const AboutData = (
   <div>
     <TextSlide id = "HelloText" text = "About Me" func={animateSlipper}/>
-    <Image image = {aboutPic}  class = "ResumeImage" caption = "Myself in Santa Cruz, taking photos of the sunset."/>
     <Paragraph title = "" id = "AboutMeText" text = "I’m a curious, high-achieving business marketing student at Cal Poly Pomona, with a desire to gain practical experience within a financial and/or technological organization. I have over 2 years of sales and finance experience and recently completed an internship at II-VI, where I assisted with sales exceeding $10 million."></Paragraph>
     <Paragraph title = "Current Work" id = "AboutMeText" text = "Currently, I’m part of Cal Poly Pomona’s Consumer Insights Consultancy. The consultancy conducts marketing research for clients assisting with profit margins, market outreach, and digital integration. Thus far I have strengthened my skills in data science, finances, and market research."/>
     <Paragraph title = "Looking Forward" id = "AboutMeText" text = "I’m looking forward to working in a business and/or technology organization. I’d love to learn more about finance, market analysis, enterprise software, and/or consulting with the next move in my career."/>
