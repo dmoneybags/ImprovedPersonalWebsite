@@ -253,16 +253,16 @@ export const MainSectionData = (
     <TextSlide id = "HelloText" text = "Hi, I'm Daniel DeMoney" func={animateTextSwoosh}/>
     <div className='TextImageBox'>
       <Image image = {iPhoneImage} class = "iPhoneImage" caption = "Apollo, an app I wrote to pair with an IOT device"/>
-      <Paragraph title = "About me" id = "AboutMeText" text = "I'm a 3rd year Business Marketing student at Cal Poly Pomona interested in joining a motivated sales or strategy team."/>
+      <Paragraph title = "About me" id = "AboutMeText" text = "I'm a 3rd year Business Marketing student at Cal Poly Pomona interested in joining a motivated data analytics team."/>
     </div>
     <div className='TextImageBox'>
-      <Paragraph title = "My Interests" id = "InterestsText" text = "I'm extremely interested in B2B sales, data science, and programming. I spend most my free time programming software, flipping items on Ebay, and playing piano. "/>
+      <Paragraph title = "My Interests" id = "InterestsText" text = "I'm extremely interested in data science, signal processing, and marketing. I spend most my free time programming software, flipping items on Ebay, and playing piano. "/>
       <Image image = {Image2048}  class = "Image2048" caption = "A graph of rewards for a reinforcement learning model I created"/>
     </div>
     <div style={{padding: "4em"}}>
       <TextSlide id="BigWhy" text = "How Was This Website Made?" func={animateSlipper}/>
       <Image image = {CImage}  class = "CImage" caption = "BlackJack with Ncurses, one of the first C programs I created"/>
-      <Paragraph id = "InterestsText" text = "One of the main joys I find within life is through teaching myself new skills. This led me to teach myself the intricacies of computer science and learn how to code within C, Python, SQL, Swift, and Javascript. This website is coded with React, a popular Javascript framework."/>
+      <Paragraph id = "InterestsText" text = "This website was coded in Javascript with the React Framework. It's one of the many personal coding projects I've taken up to learn a new skill."/>
     </div>
     <hr style={{margin: "2em", height: "1px"}}></hr>
     <NavButtons />
